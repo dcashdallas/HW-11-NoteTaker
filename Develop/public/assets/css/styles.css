@@ -65,28 +65,38 @@ body {
 
 .note-title:read-only, .note-textarea:read-only {
   color: #000000;
+  margin-top: 5px;
   
 }
 
-.list-container .card {
+.card {
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  margin-top: px;
+  border-top: 10px;
 }
 
 .list-container {
   padding-left: 0;
-  color: green;
+  margin-top: 5px;
+  
 }
 
-.list-container .list-group,
+.list-container 
 .list-container .list-group-item:first-child,
 .list-container .card {
-  border-top: none;
+  border-top: 1.6px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   color: #000000;
+}
+
+.list-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .list-container i {
@@ -96,17 +106,25 @@ body {
 }
 
 .list-container .list-group-item {
-  border-left: none;
-  border-right: none;
-  padding: 20px;
+  
+  padding: 15px;
   cursor: pointer;
   color: #000000;
-  background-color: #06f506;
+  background-color: #921904;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border-width: 2.5px;
+  border-color: black;
+  
+  
 }
-#list-group {
-  color: red;
 
-}
+
+ .card { 
+  margin-top: 10px;
+} 
 
 .navbar {
   color: #000000;
@@ -115,5 +133,10 @@ body {
 }
 
 .navbar-brand {
-  color: #000000
+  color: #000000;
+  
+}
+
+.navbar-brand:hover {
+  color: white;
 }
