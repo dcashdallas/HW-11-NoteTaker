@@ -1,21 +1,45 @@
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: fantasy;
+  color: #000000;
   
 
 }
 
+body {
+  background-color: black;
+  font-family: fantasy;
+}
+
+.container {
+  background-color: #921904;
+}
+
+.jumbotron {
+  background-color: #921904;
+}
+
+.save-icon {
+  margin-bottom: 0px;
+}
 .save-note {
   display: none;
 
 }
 
-.icons i {
+.home-button {
+  color: black;
+}
+
+.icons  {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  text-align: center;
+  margin-bottom: -10;
 }
 
 .note-textarea, .note-title {
@@ -29,7 +53,6 @@ html, body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
-  background-color: gray;
   color: #000000
 }
 
@@ -37,11 +60,12 @@ html, body {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  color: #000000
 }
 
 .note-title:read-only, .note-textarea:read-only {
   color: #000000;
-  background-color: gray;
+  
 }
 
 .list-container .card {
@@ -77,13 +101,19 @@ html, body {
   padding: 20px;
   cursor: pointer;
   color: #000000;
-  background-color: #1100ff;
+  background-color: #06f506;
 }
 #list-group {
   color: red;
 
 }
 
-.navbar-brand .navbar {
-  font-family: cursive;
+.navbar {
+  color: #000000;
+  margin-bottom: 0px;
+  background-color: #921904; 
+}
+
+.navbar-brand {
+  color: #000000
 }
