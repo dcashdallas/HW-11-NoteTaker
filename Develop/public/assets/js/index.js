@@ -125,6 +125,13 @@ var renderNoteList = function (notes) {
   $noteList.append(noteListItems);
 };
 
+// Gets notes from the db and renders them to the sidebar
+var getAndRenderNotes = function () {
+  return getNotes().then(function (data) {
+    renderNoteList(data);
+  });
+};
+
 
 
 // Gets and renders the initial list of notes
