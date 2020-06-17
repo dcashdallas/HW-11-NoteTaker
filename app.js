@@ -3,12 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-var port = process.env.port || 2001;
-
-app.listen(port, function () {
-    console.log(`Now listening to port ${port}`);
-})
-
+const port = 2001;
 const mainDir = path.join(__dirname, "/Develop/public");
 
 app.use(express.static('Develop/public'));
