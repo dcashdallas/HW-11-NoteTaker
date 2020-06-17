@@ -3,16 +3,16 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const port = process.env.port || 2001;
+const port = process.env.port || 3000;
 const mainDir = path.join(__dirname, "/Develop/public");
 
 app.use(express.static('Develop/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.get("/", function (req, res) {
-//     res.json(path.join(__dirname, "Develop/index.html"));
-// });
+app.get("/", function (req, res) {
+    res.json(path.join(__dirname, "Develop/index.html"));
+});
 
 app.get("/notes", function (req, res) {
     res.sendFile(path.join(mainDir, "notes.html"));
