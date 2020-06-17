@@ -34,5 +34,6 @@ Deployed as Heroku Application: https://damp-cove-20803.herokuapp.com/
     <img src="https://img.shields.io/badge/Release%20Version%20-1.0-green"/></>
     <a>
     </p>
+    <hr>
 
 ![Note taker demo gif](https://github.com/dcashdallas/HW-11-NoteTaker/blob/master/Develop/public/assets/notetaker.gif?raw=true)
